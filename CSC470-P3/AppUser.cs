@@ -11,5 +11,6 @@ namespace CSC470_P3
         public string FirstName;
         public string LastName;
         public string EmailAddress;
+        public bool IsAuthenticated; //missed during set up of this class
     }
 }
