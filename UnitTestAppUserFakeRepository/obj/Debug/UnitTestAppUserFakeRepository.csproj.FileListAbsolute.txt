@@ -1,0 +1,2 @@
+C:\Users\usmcj\OneDrive\Documents\GitHub\P3\UnitTestAppUserFakeRepository\obj\Debug\UnitTestAppUserFakeRepository.csprojAssemblyReference.cache
+C:\Users\usmcj\OneDrive\Documents\GitHub\P3\UnitTestAppUserFakeRepository\obj\Debug\UnitTestAppUserFakeRepository.csproj.CoreCompileInputs.cache

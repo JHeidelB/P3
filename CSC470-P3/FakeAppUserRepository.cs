@@ -59,6 +59,7 @@ namespace CSC470_P3
                 AuthenticationStatus = true;
                 return AuthenticationStatus;
             }
+            SetAuthentication(UserName, AuthenticationStatus);
             return AuthenticationStatus;
         }
 
