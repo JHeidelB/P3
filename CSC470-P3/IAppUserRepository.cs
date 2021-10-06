@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSC470_P3
 {
-    interface IAppUserRepository
+    public interface IAppUserRepository
     {
         bool Login(string UserName, string Password);
         List<AppUser> GetAll();

@@ -87,6 +87,7 @@ namespace CSC470_P3
             this.LoginButton.TabIndex = 5;
             this.LoginButton.Text = "Login";
             this.LoginButton.UseVisualStyleBackColor = true;
+            this.LoginButton.Click += new System.EventHandler(this.LoginButton_Click);
             // 
             // Form1
             // 

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace CSC470_P3
 {
-    class AppUser
+    public class AppUser
     {
         public string UserName;
         public string Password;
