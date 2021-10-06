@@ -18,8 +18,9 @@ namespace CSC470_P3
         }
 
         private void LoginButton_Click(object sender, EventArgs e)
-        {
-            if (UserNameText.Text == "travis" && PasswordText.Text == "0000")
+        {            
+            // Travis: The Program wasnot working because you left the commented out code in when you were testing
+            //if (UserNameText.Text == "travis" && PasswordText.Text == "0000")
             {
                 bool isAuthenticated;
                 FakeAppUserRepository check = new FakeAppUserRepository();
@@ -29,14 +30,14 @@ namespace CSC470_P3
                 {
                     check.SetAuthentication(UserNameText.Text, isAuthenticated);
                     Main mainPage = new Main();
-                    this.Close();
+                    this.Hide(); // Travis: I changed this to Hide, Close exits the program
                     mainPage.Show();
                 }
                 else
                 {
-                    MessageBox.Show("Username or Password Incorrect");
+                    MessageBox.Show("Incorrect UserName or Password","Attention");/*("Username or Password Incorrect");*/ // Travis: Changed this to match the sequence Diagram
                 }
-
+            //}
                 
             }
         }
