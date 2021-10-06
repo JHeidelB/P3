@@ -13,3 +13,4 @@ C:\Users\usmcj\OneDrive\Documents\GitHub\P3\CSC470-P3\obj\Debug\netcoreapp3.1\CS
 C:\Users\usmcj\OneDrive\Documents\GitHub\P3\CSC470-P3\obj\Debug\netcoreapp3.1\CSC470-P3.dll
 C:\Users\usmcj\OneDrive\Documents\GitHub\P3\CSC470-P3\obj\Debug\netcoreapp3.1\CSC470-P3.pdb
 C:\Users\usmcj\OneDrive\Documents\GitHub\P3\CSC470-P3\obj\Debug\netcoreapp3.1\CSC470-P3.genruntimeconfig.cache
+C:\Users\usmcj\OneDrive\Documents\GitHub\P3\CSC470-P3\obj\Debug\netcoreapp3.1\CSC470_P3.Main.resources

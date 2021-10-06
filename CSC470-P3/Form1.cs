@@ -19,7 +19,5 @@ namespace CSC470_P3
 
     }
 
-    public class FakeAppUserRepository
-    {
-    }
+
 }
