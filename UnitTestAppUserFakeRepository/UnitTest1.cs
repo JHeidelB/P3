@@ -1,12 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
+
 /*
- * JAMAE: 
- * WORKED WITH TRAVIS ON THIS POTION OF THE PROBLEM, HE COMMITTED BACK 
- * TO THE GETHUB REPO THAT HE WAS RUNNING INTO ERROR WHEN TRYING TO 
- * ADD THE REFERANCE, THIS IS HIS PORTION OF THE CODE, NO MATTER WHAT WE 
- * DID WE COULD NOT GET THE "using CSC470-P3" TO SHOW UP, WHEN MANUALY 
- * TYPING IN THIS SECTION HE FLAGGED WITH ERRORS. 
+ * TRAVIS: 
+ * STILL UNABLE TO ADD THE REFERANCE, I HAVE ADDED TO THE 
+ * UNIT TEST REFERANCE AS STATED IN YOUR EMAIL. BUT IT WONT
+ * ALLOW US TO ADD IT TO THE REFERANCE AT THE TOP OF THE .cs 
+ * DOCUMENT
  */
 namespace UnitTestAppUserFakeRepository
 {
@@ -19,10 +18,10 @@ namespace UnitTestAppUserFakeRepository
             // Arrange
             string UserName = "JamaeNicole";
             string Password = "Reynolds1991";
-            FakeAppUserRepository EmpRepository = FakeAppUserRepository();
+            FakeAppUserRepository EmpRepository = new FakeAppUserRepository();
 
             // Act
-            bool Check = Login(UserName, Password);
+            bool Check = EmpRepository.Login(UserName, Password);
 
             // Assert
             Assert.AreEqual(true, Check);
@@ -33,10 +32,10 @@ namespace UnitTestAppUserFakeRepository
             // Arrange
             string UserName = "TravisAlan";
             string Password = "NotThePassword";
-            FakeAppUserRepository EmpRepository = FakeAppUserRepository();
+            FakeAppUserRepository EmpRepository = new FakeAppUserRepository();
 
             // Act
-            bool Check = Login(UserName, Password);
+            bool Check = EmpReposity.Login(UserName, Password);
 
             // Assert
             Assert.AreNotEqual(true, Check);

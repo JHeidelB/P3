@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace CSC470_P3
 {
-    class FakeAppUserRepository : IAppUserRepository // cant remember how to fix this, i know it is in the video of this assignment
+    public class FakeAppUserRepository : IAppUserRepository // cant remember how to fix this, i know it is in the video of this assignment
     {
         private static Dictionary<string, AppUser> AppUsers;
         public FakeAppUserRepository()
@@ -19,6 +18,7 @@ namespace CSC470_P3
                     LastName = "Reynolds",
                     Password = "Reynolds1991",
                     EmailAddress = "USMCJamae@gmail.com",
+                    IsAuthenticated = false
                 });
                 AppUsers.Add("TravisAlan", new AppUser
                 {
@@ -27,6 +27,7 @@ namespace CSC470_P3
                     LastName = "Heidelberger",
                     Password = "Heidelberger1988",
                     EmailAddress = "TravisAlan24@gmail.com",
+                    IsAuthenticated = false
                 });
 
             }
@@ -43,30 +44,33 @@ namespace CSC470_P3
 
         public AppUser GetByUserName(string UserName)//*************
         {
-            AppUser emp;
-            AppUsers.TryGetValue(UserName, out emp);
-            return emp;
-            
+            AppUser currentUser;
+            try
+            {
+                currentUser = AppUsers[UserName];
+            }
+            catch (Exception e)
+            {
+
+                currentUser = null;
+            }
+            return currentUser;
         }
 
         public bool Login(string UserName, string Password)
         {
             bool AuthenticationStatus = false;
             AppUser emp;
-            AppUsers.TryGetValue(UserName, out emp);
-            if (emp.Password == Password)
+            if (AppUsers.TryGetValue(UserName, out emp))
             {
-                AuthenticationStatus = true;
-                return AuthenticationStatus;
+                AuthenticationStatus = emp.Password == Password;
             }
-            SetAuthentication(UserName, AuthenticationStatus);
             return AuthenticationStatus;
         }
 
         public void SetAuthentication(string UserName, bool isAuthenticated)
         {
-            AppUser emp = GetByUserName(UserName);
-            emp.IsAuthenticated = isAuthenticated;
+            AppUsers[UserName].IsAuthenticated = isAuthenticated;
         }
     }
 }
