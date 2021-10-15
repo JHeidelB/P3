@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\travi\\Desktop\\P3\\CSC470-P3\\CSC470-P3.csproj": {}
+    "C:\\Users\\usmcj\\OneDrive\\Documents\\GitHub\\P3\\CSC470-P3\\CSC470-P3.csproj": {}
   },
   "projects": {
-    "C:\\Users\\travi\\Desktop\\P3\\CSC470-P3\\CSC470-P3.csproj": {
+    "C:\\Users\\usmcj\\OneDrive\\Documents\\GitHub\\P3\\CSC470-P3\\CSC470-P3.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\travi\\Desktop\\P3\\CSC470-P3\\CSC470-P3.csproj",
+        "projectUniqueName": "C:\\Users\\usmcj\\OneDrive\\Documents\\GitHub\\P3\\CSC470-P3\\CSC470-P3.csproj",
         "projectName": "CSC470-P3",
-        "projectPath": "C:\\Users\\travi\\Desktop\\P3\\CSC470-P3\\CSC470-P3.csproj",
-        "packagesPath": "C:\\Users\\travi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\travi\\Desktop\\P3\\CSC470-P3\\obj\\",
+        "projectPath": "C:\\Users\\usmcj\\OneDrive\\Documents\\GitHub\\P3\\CSC470-P3\\CSC470-P3.csproj",
+        "packagesPath": "C:\\Users\\usmcj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usmcj\\OneDrive\\Documents\\GitHub\\P3\\CSC470-P3\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\travi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\usmcj\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
