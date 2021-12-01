@@ -60,12 +60,28 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppUser.cs" />
+    <Compile Include="Create Feature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Feature.Designer.cs">
+      <DependentUpon>Create Feature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create Requirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create Requirement.Designer.cs">
+      <DependentUpon>Create Requirement.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateIssueRepository.cs" />
     <Compile Include="FakeAppUserRepository.cs" />
+    <Compile Include="FakeFeatureRepository.cs" />
     <Compile Include="FakeIssueRepository.cs" />
     <Compile Include="FakePreferenceRepository.cs" />
     <Compile Include="FakeProjectRepository.cs" />
+    <Compile Include="FakeRequirementRepository.cs" />
+    <Compile Include="Feature.cs" />
     <Compile Include="IAppUserRepository.cs" />
+    <Compile Include="IFeatureRepository.cs" />
     <Compile Include="IIssueRepository.cs" />
     <Compile Include="IPreferenceRepository.cs" />
     <Compile Include="IProjectRepository.cs" />
@@ -87,12 +103,25 @@
     <Compile Include="FormModifyProject.Designer.cs">
       <DependentUpon>FormModifyProject.cs</DependentUpon>
     </Compile>
+    <Compile Include="IRequirementRepository.cs" />
     <Compile Include="Issue.cs" />
     <Compile Include="IssueDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="IssueDashboard.Designer.cs">
       <DependentUpon>IssueDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify Feature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify Feature.Designer.cs">
+      <DependentUpon>Modify Feature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modify Requirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modify Requirement.Designer.cs">
+      <DependentUpon>Modify Requirement.cs</DependentUpon>
     </Compile>
     <Compile Include="Modify.cs">
       <SubType>Form</SubType>
@@ -129,6 +158,25 @@
       <DependentUpon>RecordIssue.cs</DependentUpon>
     </Compile>
     <Compile Include="RecordIssue1.cs" />
+    <Compile Include="Requirement.cs" />
+    <Compile Include="Select Feature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select Feature.Designer.cs">
+      <DependentUpon>Select Feature.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Select Requirement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Select Requirement.Designer.cs">
+      <DependentUpon>Select Requirement.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Create Feature.resx">
+      <DependentUpon>Create Feature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create Requirement.resx">
+      <DependentUpon>Create Requirement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +198,12 @@
     <EmbeddedResource Include="IssueDashboard.resx">
       <DependentUpon>IssueDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Modify Feature.resx">
+      <DependentUpon>Modify Feature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modify Requirement.resx">
+      <DependentUpon>Modify Requirement.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Modify.resx">
       <DependentUpon>Modify.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +218,12 @@
     </Compile>
     <EmbeddedResource Include="RecordIssue.resx">
       <DependentUpon>RecordIssue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select Feature.resx">
+      <DependentUpon>Select Feature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Select Requirement.resx">
+      <DependentUpon>Select Requirement.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\FakeIssueRepository.datasource" />
